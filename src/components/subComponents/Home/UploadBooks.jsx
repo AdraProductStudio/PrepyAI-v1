@@ -92,20 +92,25 @@ const UploadBooks = () => {
               setUpdateBooks(!updateBooks);
             } else if (response.data.status_code === 403) {
               toast.error("This PDF does not supported");
+              setFileUploadLoading(false);
             }
           });
       } else {
         toast.error("Unsupported file format, Upload pdf files only");
+        setFileUploadLoading(false);
         handleClose();
         setProgressPercentage(0);
       }
     }catch (err) {
-        //Not in 200 response
-        if (err.response.status === 401) {
+        //Not in 200 response 
+        console.log(err)
+        if (err.response?.status === 401) {
           toast.error("Session Expired...! Please try again...!");
-          setReGenerateToken(!reGenerateToken)          
+          setReGenerateToken(!reGenerateToken)  
+          setFileUploadLoading(false);        
         } else {
           toast.error(err.message);
+          setFileUploadLoading(false);
         }
       }
   

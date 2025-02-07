@@ -221,6 +221,7 @@ const [longSubmitLoading,setLongSubmitLoading]=useState(false)
           } else if (response.data.status_code === 403) {
             toast.error(response.data.error_message);
             setLoadingImage(false);
+            setGenerateQuestionBtn("Generate Questions")``
           }
         });
     } catch (err) {
@@ -496,7 +497,7 @@ const [longSubmitLoading,setLongSubmitLoading]=useState(false)
         setLongQuestionLoading(true)
         setSubmitLoading(true)
 
-        console.log(longAnsParams)
+        
        
 
         await axios.post(`${process.env.REACT_APP_LOCAL_HOST}/submit_answer`, longAnsParams, {
@@ -504,7 +505,7 @@ const [longSubmitLoading,setLongSubmitLoading]=useState(false)
         })
           .then((response) => {
             if (response.data.status_code === 200) {
-              console.log(response.data)
+          
 
               setAiQuestionAnswer(response.data.Explanation)
               setLongQuestionModaldata(response.data?.Explanation)

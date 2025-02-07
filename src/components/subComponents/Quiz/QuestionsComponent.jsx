@@ -141,7 +141,7 @@ const QuestionsComponent = () => {
                       className="btn bg-custom text-white w-100 "
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
-                      onClick={()=>{console.log(longQuestionModaldata)}}
+                      
                     >
                       <span className="d-flex">
                         Status: <p className="mb-0 ms-2 fw-bold">{longQuestionModaldata?.overall_status}</p>
