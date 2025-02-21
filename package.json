@@ -45,7 +45,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://anatomy.adraproductstudio.com/",
+  "homepage": "https://anatomy.adraproductstudio.com/qabot",
   "devDependencies": {
     "tailwindcss": "^3.3.3"
   }
