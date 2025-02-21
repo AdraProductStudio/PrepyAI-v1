@@ -11,7 +11,7 @@ const SignInWithGoogle = () => {
 
   const handleReDirectWebPage = () => {    
     window.location.replace(
-      "https://anatomyapi.adraproductstudio.com/googleweb"
+      "https://prepyaiapi.adraproductstudio.com/googleweb"
     );
   };
 
