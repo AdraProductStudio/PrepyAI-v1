@@ -38,7 +38,7 @@ const PricingTable = () => {
 
         await axios
           .post(
-            "https://anatomyapi.adraproductstudio.com/get_checkout_status",
+            "https://prepyaiapi.adraproductstudio.com/get_checkout_status",
             {
               user_email_id: email,
             }
@@ -130,7 +130,7 @@ const PricingTable = () => {
       try {
         await axios
           .post(
-            "https://anatomyapi.adraproductstudio.com/referral_code_check",
+            "https://prepyaiapi.adraproductstudio.com/referral_code_check",
             {
               referral_code: referralCode,
               user_email_id: email,
@@ -368,7 +368,7 @@ const PricingTable = () => {
               <div className="card-footer border-top-0">
                 <hr className="horizontalRuler " />
                 <form
-                  action="https://anatomyapi.adraproductstudio.com/create-checkout-session"
+                  action="https://prepyaiapi.adraproductstudio.com/create-checkout-session"
                   method="POST"
                 >
                   <input type="hidden" name="user_email_id" value={userID} />
