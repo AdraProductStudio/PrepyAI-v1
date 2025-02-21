@@ -9,7 +9,7 @@ import SignInWithGoogle from "./components/mainComponents/SignInWithGoogle";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/qabot">
+      <BrowserRouter>
           <Routes>
             <Route path="/" element={<SignInWithGoogle />} />
             <Route path="/subscription_plan" element={<PricingTable />} />
