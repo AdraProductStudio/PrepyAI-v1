@@ -1,0 +1,254 @@
+/* Login component */
+
+.bg-custom {
+  background-color: #ff6c95 !important;
+  border: 1px solid #ff6c95 !important;
+}
+.copyright {
+  font-size: 0.75rem !important;
+}
+.form-signin h1,
+h6 {
+  color: grey;
+}
+.form-signin button {
+  background-color: #ff6c95;
+  border: 1px solid #ff6c95;
+}
+
+
+
+
+
+.pricing-card-header {
+  margin: 0.5rem;
+  border-radius: 0.4rem !important;
+}
+.text-arrow {
+  font-size: 1.25rem;
+}
+.nav-link.active {
+  background-color: #ff6c95 !important;
+  border-radius: 50% !important;
+  color: #ffffff !important;
+}
+.planDetails li:nth-child(1) {
+  border: 1px solid #ff6c95 !important;
+  border-radius: 50% 0% 0% 50% !important;
+  border-right: none !important;
+}
+.planDetails li:nth-child(2) {
+  border: 1px solid #ff6c95 !important;
+  border-radius: 0% 50% 50% 0% !important;
+  border-left: none !important;
+}
+.nav-link {
+  color: #000 !important;
+}
+.planDetails li {
+  padding: 0.25rem;
+}
+.small-text {
+  font-size: 0.75rem;
+}
+small{
+  color: #5e6063 !important ;
+}
+
+.plan-card .features li{
+  list-style: none;
+  line-height: 2.2;
+}
+
+.coming-soon  .card-body .features li{
+  list-style: none;
+  line-height: 2.2 !important;
+}
+.coming-soon  .card-body .features li:nth-child(3){
+  line-height: 1.6 !important;
+  margin-bottom: 0.4rem ;
+}
+
+.coming-soon .features li:nth-child(4){
+  line-height: 1.5 !important;
+}
+
+
+.coming-soon .card-body li:nth-child(7){
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.referralCodeInput{
+  cursor: pointer;
+}
+
+.status-card {
+  border-left: 3px solid #ff6c95 !important;
+  border-radius: 5px !important;
+  box-shadow: 0px 7.377px 46.108px 0px rgba(7, 5, 26, 0.07) !important;
+}
+
+.language-selectbox:focus {
+ box-shadow: 0px 0px 5px 3px #ffb1c7 !important;
+ border: #5e6063;
+}
+.form-select.language-selectbox option:hover,
+.form-select.language-selectbox option:focus {
+  background-color: #ff6c95 !important;
+  color: white !important;
+} 
+
+
+
+
+/* Pricing component */
+
+
+
+
+/* media queries */
+
+@media (max-width: 349px) {
+  .explore-pricing-container {
+    padding: 2rem !important;
+    margin-top: 250vh !important;
+    padding-bottom: 7rem !important;
+    margin-bottom: 6.3rem !important;
+  }
+  .explore-pricing-container h3 {
+    text-align: center;
+  }
+
+  .main-container-row .col-sm-4:nth-child(3) {
+    margin-top: 1rem !important;
+    margin-bottom: 3rem !important;
+  
+  }
+  .sign-in-with-google-logo{
+    width: 75%;
+  }
+}
+@media (min-width: 350px) and (max-width: 575px) {
+  .main-container-row{
+    margin-top: 190vh !important;
+
+  }
+
+  .main-container-row .col-sm-4 {
+    margin-top: 2rem !important;
+    
+  }
+  .explore-pricing-container {
+    padding: 2rem !important;
+    margin-top: 220vh !important;
+    padding-bottom: 7rem !important;
+    margin-bottom: 5rem !important;
+    
+  }
+  .explore-pricing-container h3 {
+    text-align: center;
+  }
+
+  .card.coming-soon .card-footer {
+    margin-bottom: 3rem !important;
+  }
+  .sign-in-with-google-logo{
+    width: 75%;
+  }
+
+
+}
+
+@media (min-width: 351px) {
+  .card.m-1 {
+    margin-bottom: 2.5rem !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .main-container-row {
+    margin-top: 150vh !important;
+    padding-top: 8rem !important;
+    padding-bottom: 7rem !important;
+    margin-bottom: 5rem !important;
+    width: 100% !important;
+  }
+  .explore-pricing-container {
+    text-align: center;
+    width: 100% !important;
+    margin-bottom: 10rem;
+  }
+  .explore-pricing-container h3 {
+    text-align: center;
+  }
+
+  .main-container-row .col-sm-4 {
+    width: 100% !important;
+    margin-top: 4rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-container-row {
+    margin-top: 125vh !important;
+    padding-top: 8rem !important;
+    padding-bottom: 7rem !important;
+    margin-bottom: 5rem !important;
+    width: 100% !important;
+  }
+  .explore-pricing-container {
+    text-align: center;
+    width: 100% !important;
+    margin-bottom: 10rem;
+  }
+  .explore-pricing-container h3 {
+    text-align: center;
+  }
+
+  .main-container-row .col-sm-4 {
+    width: 100% !important;
+    margin-top: 4rem !important;
+  }
+}
+
+.FaQuestionCircle-container:hover{
+  cursor: pointer;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .main-container-row {
+    margin-top: 20vh !important;
+    padding-top: 8rem !important;
+    padding-bottom: 7rem !important;
+    margin-bottom: 5rem !important;
+  }
+  .explore-pricing-container h3 {
+    text-align: center;
+  }
+  .FaQuestionCircle-container span {
+    font-size: 0.7rem !important;
+  }
+  .explore-pricing-container{
+    margin-top: 40vh;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .FaQuestionCircle-container span {
+    font-size: 0.8rem !important;
+  }
+  .explore-pricing-container{
+    margin-top: 40vh;
+  }
+  .whole-pricing-container{
+    margin-top: 5vh;
+
+  }
+}
+
+@media (min-width: 1400px) {
+  .explore-pricing-container{
+    margin-top: 45vh;
+  }
+}

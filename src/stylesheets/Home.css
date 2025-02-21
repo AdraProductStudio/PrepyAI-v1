@@ -1,0 +1,728 @@
+
+:root {
+  --div-height: 100vh;
+  --pink: #ff6c95;
+}
+
+/* DashboardHeader */
+
+.horizontal-line {
+  color: gray;
+  width: 100%;
+}
+
+.right-column {
+  padding: 0px;
+  width: 84% !important;
+}
+
+.brand-color,
+.fa-icon,
+.pdfFile {
+  color: #ff6c95 !important;
+}
+
+
+.adra-logo-image{
+  /* width: 5.7rem; */
+  margin: auto 0;
+}
+
+
+.custom-outline-button:hover {
+  background-color: #ff6c95 !important;
+  border: 1px solid #ff6c95 !important;
+}
+
+header {
+  width: 100%;
+  background-color: white !important;
+  height: calc(var(--div-height) - 93vh);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.navbar-header {
+  min-height: calc(var(--div-height) - 91vh);
+}
+.navbar-footer {
+  height: calc(var(--div-height) - 95vh);
+}
+
+header h2 {
+  color: #ff6c95;
+  margin-left: 20px;
+}
+
+.whole-pricing-container {
+  height: calc(var(--div-height) - 86vh);
+  margin-top: 45vh;
+}
+
+.pricing-table-main {
+  height: 100% !important;
+  margin-top: -30vh !important;
+}
+
+.book-card :hover {
+  cursor: pointer;
+}
+
+/* DashboardFooter */
+
+.list-group-item.back-to-home:hover,
+.list-group-item.quiz-page-logout:hover{
+  background-color: #fff;
+}
+
+footer {
+
+  width: 100%;
+  background-color: #eee;
+  height: calc(var(--div-height) - 96vh);
+  text-align: center;
+}
+
+.footer-text {
+  margin: auto 0;
+  font-size: 0.75rem !important;
+}
+
+/* DashboardSidebar */
+
+.left-column,
+.right-column {
+  height: var(--div-height);
+}
+
+.left-column {
+  background-color: #ff6c95;
+  width: 16% !important;
+  overflow: auto;
+}
+
+.left-column .side-row1 {
+  height: calc(var(--div-height) - 90vh);
+  background-color: #ff6c95 !important;
+}
+
+.left-column .side-row1 h1 {
+  text-align: center;
+  padding: 0.5rem 0;
+  color: white;
+}
+
+.side-row1 img{
+  cursor: pointer;
+}
+
+.left-column .side-row2-box {
+  background-color: #ff6c95;
+  padding: 6px 5px;
+  height: calc(var(--div-height) - 19vh);
+  border-top: 1px solid rgba(250, 249, 249, 0.454);
+  overflow: auto;
+}
+
+.left-column .side-row2 {
+  height: 100%;
+  background-color: #fff !important;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.eye-icon{
+  cursor: pointer;
+}
+.lock-icon{
+  cursor: pointer;
+}
+
+.warning-text {
+  font-size: 0.8rem;
+}
+
+.left-column .logout .side-row3-box {
+  height: calc(var(--div-height) - 91vh);
+  background-color: #ff6c95 !important;
+  cursor: pointer;
+  padding: 6px 5px;
+}
+
+
+@media (min-height:0) and (max-height:568px){
+  /* .navbar-brand img{
+    background-color: red !important;
+  } */
+  .adra-logo-image{
+    width: 20%;
+  }
+  .left-column .side-row1 {
+    height: calc(var(--div-height) - 90vh);
+    background-color: #ff6c95 !important;
+  }
+  .left-column .side-row2-box {
+    background-color: #ff6c95;
+    padding: 6px 5px;
+    height: calc(var(--div-height) - 19vh);
+    border-top: 1px solid rgba(250, 249, 249, 0.454);
+    overflow: auto;
+  }
+  .left-column .logout .side-row3-box {
+    height: calc(var(--div-height) - 91vh);
+    background-color: #ff6c95 !important;
+    cursor: pointer;
+    padding: 6px 5px;
+  }
+  .generate-question-btn,.submit-question-btn{
+    margin-bottom: 5px;
+  }
+
+
+}
+@media (max-height:740px){
+  html{
+    font-size: 10px;
+  }
+  .adra-logo-image{
+    width: 5rem;
+  }
+  .left-column .side-row1 {
+    height: calc(var(--div-height) - 92vh);
+    background-color: #ff6c95 !important;
+  }
+  .left-column .side-row2-box {
+    background-color: #ff6c95;
+    padding: 6px 5px;
+    height: calc(var(--div-height) - 19vh);
+    border-top: 1px solid rgba(250, 249, 249, 0.454);
+    overflow: auto;
+  }
+  .left-column .logout .side-row3-box {
+    height: calc(var(--div-height) - 89vh);
+    background-color: #ff6c95 !important;
+    cursor: pointer;
+    padding: 6px 5px;
+  }
+  .logout-image{
+    width: 70%;
+  }
+  .profile-icon{
+    width: 70%;
+  }
+  .home-icon,
+  .logout-icon{
+    width: 20px !important;
+  }
+  .add-book-icon{
+    width: 23px !important;
+  }
+  .backToHome-and-logout .home-span,
+  .backToHome-and-logout .logout-span{
+    display: inline-block;
+    margin: 2px 0 0;
+  }
+  .questions-loading-image{
+    width: 70% !important;
+  }
+  .backToHome-and-logout{
+    margin: 15px 0;
+  }
+}
+
+
+
+
+
+
+
+
+.left-column .logout .side-row3 {
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.side-row2 hr {
+  width: 95%;
+  margin: 10px auto;
+}
+
+.side-row2 h5 {
+  font-size: 1.25rem;
+}
+
+.side-row2 .plan {
+  color: gray;
+}
+
+.side-row2 .user-container .user-email {
+  font-size: 0.8rem;
+  /* background-color: red; */
+}
+
+.side-row2 .upgrade-container p {
+  color: gray;
+}
+
+.side-row2 .referal-code-container .code-text {
+  color: gray;
+  font-size: 0.7rem;
+  text-align: justify;
+}
+
+.side-row2 .referal-code-container .promo-code-text {
+  color: red;
+}
+
+.side-row2 .referal-code-container .input-group input {
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+
+.side-row2 .referal-code-container .input-group {
+  border-radius: 3px;
+}
+
+.side-row2 .referal-code-container .input-group .input-group-text {
+  font-size: 0.8rem;
+}
+
+.side-row2 .referal-code-container .input-group input:focus {
+  background-color: #e9ecef;
+}
+
+.side-row2 .remaining-questions-container .remaining-questions-text {
+  color: gray;
+}
+
+.side-row2 .remaining-questions-container .quota-usage {
+  font-size: 0.6rem;
+  border-radius: 3px;
+  color: #198754 !important;
+}
+
+.side-row2 .books-text {
+  color: gray;
+}
+
+.promo-code-container{
+  cursor: pointer;
+}
+.side-row2 .referal-code-container .input-group .input-group-text:hover{
+  background-color: #dde4eb ;
+}
+
+.cancel-subscription-container {
+  cursor: pointer;
+}
+
+.side-row2 .cancel-subscription-text {
+  font-size: 0.7rem;
+}
+
+.FaCheckSquare {
+  color: var(--pink);
+  font-size: 1.4rem !important;
+}
+.FaCopy {
+  font-size: 1.4rem !important;
+}
+
+.back-to-home,
+.quiz-page-logout {
+  cursor: pointer;
+}
+
+.upload-card {
+  cursor: pointer;
+}
+
+
+.promocode-input {
+  border: 1px solid #ced4da !important;
+}
+
+
+.limitSetBookName {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.toolTipIndex {
+  z-index: 1;
+}
+
+.book-card{
+  cursor: pointer;  
+}
+
+
+
+/* Quiz */
+#showAnswer {
+  font-size: 0.75rem;
+  color: #5e6063;
+}
+#showAnswerDiv:hover,
+#showAnswer:hover {
+  cursor: pointer;
+}
+#showAnswerBadge {
+  background-color: #ff6c95 !important;
+}
+#answer {
+  font-size: 0.8rem;
+}
+
+.loading-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 89vh;
+}
+
+.listOfQuestions {
+  max-height: 75vh;
+}
+.list-of-options li {
+  border: none;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+}
+.list-of-options li:hover{
+  background-color: #eee;
+}
+.list-of-options li:first-child{
+  border-top-right-radius: 8px !important;
+  border-top-left-radius: 8px !important;
+}
+.list-of-options li:last-child{
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+}
+
+.list-chapters {
+  max-height: 65vh;
+  overflow: auto;
+}
+
+.no-bookmark-text{
+  font-size: 14px;
+  text-align: justify;
+}
+
+.bg-custom-success {
+  background-color:#D9FFE9 ;
+}
+.bg-custom-danger {
+  background-color:#FFDBDA ;
+}
+
+.disabled {
+  pointer-events:none; 
+  opacity:0.6;         
+}
+
+.option-div{
+  cursor: pointer;
+}
+.option-div:hover{
+  background-color: #eee;
+}
+
+.chapter-title {
+  font-weight: bold;
+}
+
+
+
+.accordion-button:not(.collapsed){
+  background-color: transparent !important;
+  color: #212529 !important;
+}
+.accordion-button:not(.collapsed){
+  background-color: transparent !important;
+  color: #212529 !important;
+}
+
+
+.cancel-user-select{
+  pointer-events: none;
+  color: grey;  
+}
+
+/* .accordion-body .accordion-button{
+  background-color: #cde3ff;
+} */
+
+.list-of-chapters-container .list-group-item{
+  cursor: pointer;
+}
+.list-of-chapters-container .list-group-item:hover{
+  background-color: #ffd2df;
+}
+
+
+
+.list-of-chapters-container .accordion-collapse.collapse.show ul li:hover{
+   background-color: #ffd2df;
+}
+
+
+
+.list-of-chapters-container .list-group-item.active {
+  color: #212529;
+  background-color: #ffd2df;
+  border-color: #ffb1c7;
+}
+.list-of-chapters-container .accordion-item.active {
+  color: #212529;
+  background-color: #ffd2df;
+  border-color: #ffb1c7;
+}
+.list-of-chapters-container .accordion-button:hover{
+  background-color: #ffd2df !important;
+}
+
+.user-pointer-none{
+  pointer-events: none;
+}
+
+
+.instructions-container .list-group-item:hover{
+    background-color: #fff;
+    cursor: text;
+} 
+
+.difficulty-level-options{
+  background: #fff !important;
+  color: #000 !important;
+  cursor: pointer;
+}
+
+.prepy .dropdown-toggle{
+  background-color: #fff !important;
+  border: 1px solid #ced4da !important;
+  color: #000 !important;
+  /* box-shadow: 0px 0px 5px 3px #ffb1c7; */
+  padding: 5px 7px;
+  position: relative;
+  text-align: left;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 78%;
+}
+.prepy .dropdown-toggle:focus{
+  box-shadow: 0px 0px 5px 3px #ffb1c7 !important;
+  border: 1px solid #ced4da00 !important;
+}
+.prepy .dropdown-menu {
+  width: 100% !important;
+  max-height: 450px !important;
+  overflow-y: auto;
+}
+.prepy-difficulty-level ul{
+  min-width: 100% !important;
+  max-height: 450px !important;
+  overflow-y: auto;
+}
+
+.prepy .dropdown-menu .no-history{
+  padding: 0 15px;
+  width: 100%;
+}
+.prepy .dropdown-menu li{
+  padding: 0;
+}
+.prepy .dropdown-menu .dropdown-item:hover{
+    background: #ff6c95;
+    color: #fff;
+    transition: 0.1s linear;
+}
+
+
+.questions-loading-spinner{
+    color: #ff6c95;
+    height: 70vh;
+}
+
+
+.option-div .form-check-input:checked {
+  background-color: #ff6c95;
+  border-color: #ff6c95;
+}
+
+/* media queries */
+
+@media (max-width:991px){
+  .prepy .dropdown-toggle{
+    background-color: #fff !important;
+    border: 1px solid #ced4da !important;
+    color: #000 !important;
+    /* box-shadow: 0px 0px 5px 3px #ffb1c7; */
+    padding: 5px 15px;
+    position: relative;
+    text-align: center;
+  }
+  .dropdown-toggle::after {
+      display: inline-block;
+      vertical-align: 0.255em;
+      content: "";
+      border-top: 0.3em solid;
+      border-right: 0.3em solid transparent;
+      border-bottom: 0;
+      border-left: 0.3em solid transparent;
+      position: absolute;
+      top: 50%;
+      left: 95%;
+  }
+  .generate-question-btn,.submit-question-btn{
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 767px) {
+  .left-column {
+    margin-left: -30% !important;
+    z-index: 1 !important;
+    position: fixed !important;
+    transition: all 0.5s;
+  }
+
+  .left-column.active {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  .right-column {
+    width: 100% !important;
+  }
+
+  .backToHome-and-logout{
+    margin-top: 5px;
+  }
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .pricing-table-main {
+    height: 100% !important;
+    margin-top: -25vh !important;
+  }
+  .whole-pricing-container {
+    margin-top: 45vh !important;
+  }
+}
+
+/* Display Books */
+
+main {
+  width: 100%;
+  height: calc(var(--div-height) - 11vh);
+  text-align: center;
+}
+
+.card-footer p {
+  font-size: 0.7rem;
+}
+
+.action-field-container {
+  min-height: 8% !important;
+}
+
+.action-field-container .add-book-btn {
+  background-color: var(--pink);
+  color: white;
+}
+
+.action-container {
+  max-height: 92%;
+  
+}
+
+.fa-delete-icon {
+  cursor: pointer;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.files input {
+  background-color: #ededed;
+  outline-offset: -10px;
+  -webkit-transition: outline-offset 0.15s ease-in-out,
+    background-color 0.15s linear;
+  transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  padding: 120px 0px 85px 35%;
+  text-align: center !important;
+  margin: 0;
+  width: 100% !important;
+}
+.files input:focus {
+  outline: 2px dashed #92b0b3;
+  outline-offset: -10px;
+  -webkit-transition: outline-offset 0.15s ease-in-out,
+    background-color 0.15s linear;
+  transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  border: 1px solid #92b0b3;
+}
+.files {
+  position: relative;
+}
+.files:after {
+  pointer-events: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 50px;
+  right: 0;
+  height: 56px;
+  content: "";
+  background-image: url("https://cdn.adraproductstudio.com/addBook.png");
+  display: block;
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.color input {
+  background-color: #f1f1f1;
+}
+.files:before {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  right: 0;
+  height: 57px;
+  content: "or drag and drop your PDF files here";
+  display: block;
+  margin: 0 auto;
+  color: #ff6c95;
+  font-weight: 600;
+  text-transform: camelcase;
+  text-align: center;
+}

@@ -1,13 +1,117 @@
-body {
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Inter", sans-serif !important;
 }
+
+@media print {
+  html,
+  body {
+    display: none;
+  }
+}
+.test:hover{
+  cursor: pointer;
+}
+
+
+/* New css */
+
+.brand-Back-color{
+  background-color: #ff6c95;
+  border: 1px solid #ff6c95;
+  color: white;
+}
+
+.brand-Back-color :hover{
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.brand-Back-color :active{
+  box-shadow: none !important;
+}
+
+.modal-FontSize{
+  font-size: 0.8rem;
+}
+
+.mcq-Ques :hover{
+  background-color: #ff9cb8;
+  cursor:  pointer !important;
+
+}
+.cursorPointer{
+  cursor: pointer;
+}
+
+ 
+ input[type="radio"]:checked + .mcq-Ques{
+  background-color: #ff6c95;
+}
+
+.recordVoice-Size{
+  font-size: 0.7rem;
+}
+
+.recorder-Mic{
+  /* padding-top: 0.3rem !important; */
+  background: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.answer-color{
+  background-color: #ddf3cf;
+}
+
+.answerField :focus{
+  border: none !important;
+}
+
+.explanation-loading-spinner{
+  color: #ff6c95;
+}
+canvas {
+  width: 800px;
+  height: 130px;
+  margin: 2rem auto;
+}
+
+
+/* Audio player */
+.audio-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.play-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Size of the icon */
+  color: #ff6c95; /* Icon color */
+}
+
+.play-btn.playing {
+  color: #ff6c95; /* Change color when playing */
+}
+
+.audio-CloseButton :focus{
+}
+
+.volume-bar {
+  margin-top: 10px;
+}
+
+
