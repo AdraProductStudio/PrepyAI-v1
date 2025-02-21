@@ -357,7 +357,7 @@ const [longSubmitLoading,setLongSubmitLoading]=useState(false)
 
     try {
       setLongQuestionLoading(true)
-      await axios.post(`${process.env.REACT_APP_LOCAL_HOST}/get_long_questions`, longQuesParams, {
+      await axios.post(`https://prepyaiapi.adraproductstudio.com/get_long_questions`, longQuesParams, {
         headers: { Authorization: `Bearer ${token}` },
       })
         .then((response) => {
@@ -401,7 +401,7 @@ const [longSubmitLoading,setLongSubmitLoading]=useState(false)
 
     try {
       setQuestionExplanationLoaing(true)
-      await axios.post(`${process.env.REACT_APP_LOCAL_HOST}/get_questions_explaination`, longQuestionExplanation, {
+      await axios.post(`https://prepyaiapi.adraproductstudio.com/get_questions_explaination`, longQuestionExplanation, {
         headers: { Authorization: `Bearer ${token}` },
       })
         .then((response) => {
@@ -500,7 +500,7 @@ const [longSubmitLoading,setLongSubmitLoading]=useState(false)
         
        
 
-        await axios.post(`${process.env.REACT_APP_LOCAL_HOST}/submit_answer`, longAnsParams, {
+        await axios.post(`https://prepyaiapi.adraproductstudio.com/submit_answer`, longAnsParams, {
           headers: { Authorization: `Bearer ${token}` },
         })
           .then((response) => {
@@ -557,7 +557,7 @@ const [longSubmitLoading,setLongSubmitLoading]=useState(false)
 
     try {
       setAudioResponseLoading(true)
-      await axios.post(`${process.env.REACT_APP_LOCAL_HOST}/convert-speech-to-text`, audioData, {
+      await axios.post(`https://prepyaiapi.adraproductstudio.com/convert-speech-to-text`, audioData, {
         headers: { Authorization: `Bearer ${token}` },
       })
         .then((response) => {
