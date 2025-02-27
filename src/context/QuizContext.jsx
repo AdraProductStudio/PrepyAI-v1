@@ -183,6 +183,7 @@ const [longSubmitLoading,setLongSubmitLoading]=useState(false)
         default_start_page_no: "",
         default_end_page_no: "",
         difficulty_level: difficultyLevel,
+        language:questionLanguage
       };
     } else if (pageNo.page_no !== "") {
       getQuestionsParameter = {
@@ -192,6 +193,7 @@ const [longSubmitLoading,setLongSubmitLoading]=useState(false)
         default_start_page_no: pageNo.page_no,
         default_end_page_no: pageNo.endPageNo,
         difficulty_level: difficultyLevel,
+        language:questionLanguage
       };
     }
 
