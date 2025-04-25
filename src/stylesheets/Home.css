@@ -569,6 +569,11 @@ footer {
   border-color: #ff6c95;
 }
 
+.modal-footer button:hover{
+background-color:#ff3970;
+color:#fff'
+}
+
 /* media queries */
 
 @media (max-width:991px){
